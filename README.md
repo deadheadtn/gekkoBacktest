@@ -18,7 +18,9 @@ sellat_up = [1.001,1.2] //
 
 To change the PAIR go to line 226 and run this to backtest
 
-> $ php backtest.php 
+> $ php backtest.php asset currency deltadays candlesize
+
+> $ php backtest.php BTC ETH 15 60
 
 to update your dataset
 
