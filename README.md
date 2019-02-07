@@ -26,6 +26,26 @@ to update your dataset
 
 > $ php singleimport.php
 
+
+
+# Done
+
+- Randomly select trading parameters of available strategy in Param folder
+
+- Incrementaly show profit > of market
+
+- saving parameters in json format in a csv file
+
+
+
+# TODO
+
+- Adding multiple instance management and allocation 
+- starting live trader from best results
+- interfacing all this in a cool HTML5 dashboard
+
+
+
 https://www.binance.com/?ref=15038787
 
 # Donations
