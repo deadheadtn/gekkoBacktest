@@ -26,6 +26,8 @@ to update your dataset
 
 https://www.binance.com/?ref=15038787
 
+# Donations
+
 BTC 19Uc3XMfutwRuqHkStNNg9obXXe632JWAV
 
 LTC LXTrF8Xz6ni2pAEC5WSkA8vfe7Kj6Mhq26
