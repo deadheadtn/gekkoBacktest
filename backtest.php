@@ -148,7 +148,7 @@ $data = $file['datasets'];
 require ("Toml.php");
 $max=0;
 $candlesize = array(
-	15
+	$argv[4]
 );
 $stratsegyarray = scandir("Param");
 array_shift($stratsegyarray);
@@ -184,7 +184,7 @@ for ($i = 0; $i < count($data); $i++)
 					$tradeCount = 0;
 					$strategy_load = loadf($pp, $strategy_loaded);
 						$tt->setTimestamp($data[$i]['ranges'][0]['to']);
-						$from = date("Y-m-d\\TH:i:sP", strtotime('-'.$argv[2].' days', $tt->getTimestamp()));
+						$from = date("Y-m-d\\TH:i:sP", strtotime('-'.$argv[3].' days', $tt->getTimestamp()));
 		        $to = $tt->format('Y-m-d H:i');
 						$j++;
 						$ttt = '{"watch":{"exchange":"binance","currency":"' . $data[$i]["currency"] . '","asset":"' . $data[$i]["asset"] . '"},"paperTrader":{"feeMaker":0.15,"feeTaker":0.15,"feeUsing":"maker","slippage":0.05,"simulationBalance":{"asset":1,"currency":100},"reportRoundtrips":true,"enabled":true},"tradingAdvisor":{"enabled":true,"method": "' . str_replace(".toml", "", $strat) . '","candleSize": ' . $candle . ',"historySize":10},"' . str_replace(".toml", "", $strat) . '": ' . json_encode($strategy_load) . ',"backtest":{"daterange":{"from":"' . $from . '","to":"' . $to . '"}},"backtestResultExporter":{"enabled":true,"writeToDisk":false,"data":{"stratUpdates":false,"roundtrips":true,"stratCandles":true,"stratCandleProps":["open"],"trades":false}},"performanceAnalyzer":{"riskFreeReturn":2,"enabled":true},"valid":true}';
