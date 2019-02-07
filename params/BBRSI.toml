@@ -1,0 +1,11 @@
+interval = [1,15]
+
+[thresholds]
+low = [1,15]
+high = [15,30]
+persistence = [1,8]
+
+[bbands]
+TimePeriod = [1,15]
+NbDevUp = [1,15]
+NbDevDn = [1,15]

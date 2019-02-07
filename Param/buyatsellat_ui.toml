@@ -1,0 +1,4 @@
+buyat = [1.001, 1.5]
+sellat = [0.92,1]
+stop_loss_pct = [0.7,0.99]
+sellat_up = [1.001,1.2]

@@ -1,0 +1,6 @@
+interval = [1,15]
+
+[thresholds]
+low = [1,50]
+high =[50,100]
+persistence = [1,9]
