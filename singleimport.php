@@ -8,7 +8,7 @@ $instances = json_decode(file_get_contents('Instance.json', FILE_USE_INCLUDE_PAT
         $data = $file['datasets'];
 				$i=0;
 		foreach($data as $pairs){
-			if (strcmp($pairs["currency"],"BTC")==0 ){
+			if (strcmp($pairs["currency"],"USDT")==0 ){
 
 		    	$i++;
         	$tt = new \Datetime();
